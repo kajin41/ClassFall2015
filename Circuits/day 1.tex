@@ -1,19 +1,40 @@
-\documentclass[10pt,a4paper]{letter}
-\usepackage[utf8]{inputenc}
+\documentclass[10pt,a4paper]{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\address{your name and address} 
-\signature{your signature} 
+ 
 \begin{document} 
-\begin{letter}{name and address of the recipient} 
-\opening{saying hello} 
- 
-write your letter here 
- 
-\closing{saying goodbye} 
-%\cc{Cclist} 
-%\ps{adding a postscript} 
-%\encl{list of enclosed material} 
-\end{letter} 
+\section{Phasors as Rotating Vectors}
+\begin{align}
+\nonumber
+\bullet Given:\\
+i_{L}(t)&=I_{m}sin(\omega t + \theta )\\
+\nonumber
+\bullet Recall:\\
+v_{L}(t)&=L\{ di_{L}(t)/dt\}\\
+\nonumber
+\bullet Determine:\\
+\nonumber
+-The inductor voltage: v _{L}(t)
+\end{align}
+\section{Complex Impedances Capacitance}
+\begin{align}
+X_{L}&=jwL
+=j(500)(.3)
+=j150\omega\\
+X_{C}&=\frac{-j}{wc}
+=\frac{-j}{(500)(40x10^{-6}}
+=j-50\\
+Z_{total}&=100+j100\\
+V&=IZ\\
+I&=\frac{V}{Z}\\
+I&=\frac{100\angle 30^{\circ}}{100+j100}\\
+&=.707\angle -15^{\circ}\\
+i(t)&=(.707)cos(500t-15^{\circ} )
+\end{align}
+\textbf{Paralell}
+\begin{equation}
+Z_{eq}=\frac{100(-j100}{100-j100}=\frac{(100)(100\angle -90^{\circ}}{100-j100}=70.71\angle -45^{\circ}
+\end{equation}
+
 \end{document}
